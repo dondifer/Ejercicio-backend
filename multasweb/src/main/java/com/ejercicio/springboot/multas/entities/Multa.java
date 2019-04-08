@@ -1,14 +1,11 @@
-package com.ejercicio.springboot.multas.model.entities;
+package com.ejercicio.springboot.multas.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
+
+
 public class Multa {
 	
-	@Id
+	
 	private Integer id;
 	private Integer matricula;
 	private String categoria;
