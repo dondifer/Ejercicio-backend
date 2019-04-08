@@ -14,6 +14,13 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer matricula;
 	
+	public Cliente(String nombre, String apellidos, String direccion) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.direccion = direccion;
+	}
+	
 	public Cliente() {
 		super();
 	}
