@@ -29,7 +29,7 @@ public class ControllerCliente {
 	}
 	
 	//Encontrar un cliente en particular
-	@GetMapping("/clientes/{id}")
+	@GetMapping("/clientes/{matricula}")
 	public Cliente cliente(@PathVariable Integer matricula) {
 		return repository.findById(matricula).orElse(null);
 	}
@@ -41,13 +41,13 @@ public class ControllerCliente {
 	}
 	
 	//Eliminar cliente
-	@DeleteMapping("/clientes/{id}")
+	@DeleteMapping("/clientes/{matricula}")
 	public void eliminarCliente(@PathVariable Integer matricula) {
 		repository.deleteById(matricula);
 	}
 	
 	//Actualizar cliente
-	@PutMapping("/clientes/{id}")
+	@PutMapping("/clientes/{matricula}")
 	public Cliente actualizarCliente(@RequestBody Cliente cliente, @PathVariable Integer matricula) {
 		return repository.findById(matricula)
 				.map(persona -> {
