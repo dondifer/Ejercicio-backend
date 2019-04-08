@@ -7,6 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Multa {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -21,12 +22,17 @@ public class Multa {
 	
 	
 	
+	public Multa() {
+		super();
+	}
+
 	public Multa(Integer matricula, String categoria, Double cantidad) {
 		super();
 		this.matricula = matricula;
 		this.categoria = categoria;
 		this.cantidad = cantidad;
 	}
+
 	public Integer getId() {
 		return id;
 	}
