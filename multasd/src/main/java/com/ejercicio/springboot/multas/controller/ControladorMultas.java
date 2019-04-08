@@ -35,16 +35,16 @@ public class ControladorMultas {
 				.orElse(null);
 	}
 	
-	@PostMapping("/multa")
+	@PostMapping("/multas")
 	public Multa nuevaMulta(@RequestBody Multa multa) {
 		return repository.save(multa);
 	}
 	
-	@DeleteMapping("/multa/{id}")
+	@DeleteMapping("/multas/{id}")
 	public void borrarMulta(@PathVariable Integer id) {
 		repository.deleteById(id);
 	}
-	@PutMapping("/multa/{id}")
+	@PutMapping("/multas/{id}")
 	public Multa actualizarMulta(@RequestBody Multa multa,@PathVariable Integer id) {
 		return repository.findById(id)
 			.map(c -> {
