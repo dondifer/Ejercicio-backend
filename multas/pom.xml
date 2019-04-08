@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.curso.java.multas</groupId>
-	<artifactId>model</artifactId>
+	<artifactId>multas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>model</name>
+	<name>multas</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -30,11 +30,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
 		<dependency>

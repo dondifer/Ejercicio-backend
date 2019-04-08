@@ -1,13 +1,13 @@
-package com.sboot.multas.model;
+package com.sboot.multas.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ModelApplication {
+public class ApplicationMultas {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ModelApplication.class, args);
+		SpringApplication.run(ApplicationMultas.class, args);
 	}
 
 }
