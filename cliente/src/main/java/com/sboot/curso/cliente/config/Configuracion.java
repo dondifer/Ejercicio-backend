@@ -1,12 +1,12 @@
-package com.sboot.multas.config;
+package com.sboot.curso.cliente.config;
 
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.sboot.multas.model.entities.Cliente;
-import com.sboot.multas.model.entities.ClienteRepository;
+import com.sboot.curso.cliente.model.ClienteRepository;
+import com.sboot.curso.cliente.model.entity.Cliente;
 
 
 @Configuration

@@ -1,4 +1,4 @@
-package com.sboot.multas.model.entities;
+package com.sboot.curso.cliente.model.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
